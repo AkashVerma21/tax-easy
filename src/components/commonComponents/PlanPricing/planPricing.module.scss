@@ -1,0 +1,157 @@
+.planPricingcMainContainer{
+    padding: 4rem;
+    background-color: #F3FFEE;
+    text-align: center;
+    @media screen and (max-width: 1440px){
+        padding: 4rem 1rem;
+    }
+    .heading{
+    font-size: 2.8rem;
+    font-weight: 700;
+    @media screen and (max-width: 1440px){
+        font-size: 1.8rem;
+    }
+    }
+    .description{
+        font-size: 1.2rem;
+        color: #696871;
+        @media screen and (max-width: 1440px){
+            font-size: 1rem;
+        }
+    }
+    .pricingCardContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .pricingLastCardContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+.pricingCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+    width: 450px;
+    background-color: #fff;
+    box-shadow: 8px 8px 4px 3px #979797;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    margin: 15px;
+    &:hover{
+        background-color: #06AEAD;
+        color: #fff;
+        .pricingCardSubContainer{
+            .description{
+                color: #fff;
+            }
+        }
+        .detailsBtn{
+            background-color: #d9d9d9;
+            a{
+            color: #000;
+            }
+        }
+    }
+    .pricingCardSubContainer{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        width: 100%;
+        img{
+            height: 50px;
+        }
+    .heading{
+        font-size: 1.3rem;
+        margin-bottom: 0;
+        text-align: start;
+        
+    }
+    .description{
+        font-size: 1.1rem;
+        color: #000;
+        font-weight: 600;
+        margin:-10px 0 10px;
+    }
+    .pricing{
+        font-size: 1.5rem;
+        font-weight: 600;
+        @media screen and (max-width: 1440px){
+            font-size: 1.1rem;
+        }
+        .offerPrice{
+            margin: 0 10px;
+            font-size: 1.2rem;
+            position: relative;
+            display: inline-block; 
+            @media screen and (max-width: 1440px){
+                font-size: 1rem;
+            }  
+        }
+        .listingPrice{
+            margin-right: 12px;
+        }
+        .offerPrice::before{
+            content: '';
+            width: 100%;
+            position: absolute;
+            right: 0;
+            top: 50%;
+        }
+        .offerPrice::before{
+            border-bottom: 2px solid #ff0000;
+             -webkit-transform: skewY(-30deg);
+            transform: skewY(30deg);
+        }
+    }
+    .listMainDescription{
+        font-size: 1.2rem;
+        font-weight: 500;
+        margin-left: -30px;
+    }
+    .listMainContainer{
+        display: flex;
+        @media screen and (max-width: 1440px){
+            flex-direction: column;
+        }
+    .listContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 1.1rem;
+        text-align: start;
+    }
+}
+}
+    .detailsBtn{
+        font-size: 1.1rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: #06AEAD;
+        padding: 0.5rem;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+        width: 90%;
+        a{
+        text-decoration: none;
+        color: #fff;
+        }
+    }
+}
+
+.rightText{
+    width: 800px;
+    ul:nth-child(2){
+        margin-top: 2.6rem;
+        margin-left: 3rem;
+        @media screen and (max-width: 1440px){
+            margin-left: 0;
+            margin-top: 0;
+        }
+    }
+}

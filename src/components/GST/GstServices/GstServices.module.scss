@@ -1,0 +1,154 @@
+.gstServicesMainContainer{
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .heading{
+        font-size: 3rem;
+        font-weight: 700;
+        margin-bottom: 4rem;
+        @media screen and (max-width:1440px) {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+    }
+    @media screen and (max-width:768px) {
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+}
+
+.servicesCardMainContainer{ 
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 50%;
+    width: 100% !important;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #fff;
+    @media screen and (max-width:768px) {
+        height: auto;
+    }
+}
+
+.servicesCard{
+    box-shadow: 8px 8px 4px 3px #979797;
+    // &:hover{
+    //     box-shadow: 3px 3px 10px #a8a7ad;
+    //     transition: ease 0.3ms;
+    // }
+    border: 2px solid #cbc9c9;
+    background-color: #f5ffff;
+    padding-top: 3rem;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    min-height: 600px;
+    justify-content: space-between;
+    @media screen and (max-width: 1440px) and (min-width: 767px) {
+        min-height: 520px;
+    }
+    @media screen and (max-width:768px) {
+        position: block;
+        top: 0;
+        width: 100%;
+        padding-top: 1.5rem;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .imageContainer{
+        display: flex;
+        padding-left: 2rem;
+        align-items: center;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+            padding-left: 0;
+        }
+    }
+    .image{
+        width: 80px;
+        height: 60px;
+        // border: 1px solid black;
+        border-radius: 50%;
+    }
+    .cardTitle{
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding-left: 1rem;
+        padding-bottom: 0.5rem;
+        margin: 0;
+        @media screen and (max-width:768px) {
+            padding-left: 0;
+            padding-top: 1rem;
+            font-size: 1.3rem;
+        }
+    }
+    .cardPrices{
+        padding-left: 3rem;
+        padding-bottom: 0.8rem;
+        font-size: 1rem;
+        font-weight: 500;
+        color: #696871;
+        margin: 0;
+    }
+    .cardListContainer{
+        max-height: 400px;
+        @media screen and (max-width:768px) {
+            word-wrap: break-word;
+            white-space: pre-line;
+            width: 310px;
+        }
+    }
+    .servicesCardContainer{
+        width: 510px;
+        padding: 0 3rem;
+        @media screen and (max-width: 1440px) and (min-width: 767px) {
+            width: 450px;
+            padding: 0 1.5rem;
+        }
+        @media screen and (max-width:768px) {
+            width: 100%;
+            padding: 0 1rem;
+            box-sizing: border-box;
+        }
+    }
+    .cardButton{
+        display: flex;
+        justify-content: center;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        background-color: #06aead;
+        width: 100%;
+        padding: 1rem;
+        border-bottom-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-sizing: border-box;
+        margin-top: 2rem;
+    }
+
+
+    @media screen and (max-width: 1440px) and (min-width: 767px) {
+        .image{
+            width: 60px;
+            height: 40px;
+        }
+        .cardTitle{
+            font-size: 1.1rem;
+        }
+        .cardButton{
+            font-size: 1rem;
+        }
+        .cardListContainer{
+            max-height: 300px;
+        }
+    }
+}
+
+.newServiceCard{
+    min-height: 300px;
+}

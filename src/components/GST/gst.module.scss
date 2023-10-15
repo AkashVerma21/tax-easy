@@ -1,0 +1,38 @@
+.gstFirstConatiner{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.8rem;
+    background-image: linear-gradient(to right, #020027, #06aead);
+    .heading{
+        font-size: 2rem;
+        margin: 0;
+        color:#fff;
+        font-weight: 500;
+    }
+    .description{
+        font-size: 1.3rem;
+        color:#fff;
+    }
+    @media screen and (max-width:768px) {
+        padding: 2rem;
+        margin-top: 80px;
+    }
+}
+
+// .imageSection{
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     padding: 3rem 0;
+//     background-color: #fff;
+// }
+
+.offeringCard{
+    width: 730px !important;
+    // @media screen and (max-width: 1600px) {
+    //     width: 500px !important;
+    // }
+}
+

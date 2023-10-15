@@ -1,0 +1,150 @@
+.adminLogin{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10rem;
+    background-color: #b2cac4;
+    flex-wrap: wrap;
+    .heading{
+        font-size: 3rem;
+        font-style: italic;
+        color: #0d3f42;
+        box-shadow: 5px 5px 40px #ada712;
+        padding: 3rem;
+        text-shadow: 10px 10px 10px #157683;
+        margin-bottom: 4rem;
+    }
+}
+
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #E4DCF3;    ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width:768px) {
+        width: 90vw;
+    }
+}
+
+.internalCircle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 7px solid #f4cfcd;
+    border-radius: 50%;
+    margin-top: 3.5rem;
+    @media screen and (max-width:768px) {
+        width: 90vw;
+    }
+}
+
+.contactForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #b3b3ba;
+    border-radius: 30px;
+    padding: 2rem 1.5rem;
+    width: 350px;
+    height: 280px;
+    @media screen and (max-width:768px) {
+        width: 95vw;
+    }
+    .email, .name, .mobile{
+        width: auto;
+        height: auto;
+        position: relative;
+        margin-bottom: 1rem;
+    }
+    input{
+        width: 320px;
+        height: 60px;
+        border-radius: 10px;
+        border: 2px solid #dad9e0;
+        color: #696871;
+        font-size: 1rem;
+        padding-left: 20px;
+        @media screen and (max-width:768px) {
+            width: 75vw;
+            padding-left: 0;
+        }
+        }
+    label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 1.1rem 1rem;
+        color: #b1b0ba;
+        font-size: 1rem;
+        pointer-events: none;
+        transition:0.2s ease all; 
+        -moz-transition:0.2s ease all; 
+        -webkit-transition:0.2s ease all;
+    }
+    input:focus + label{
+        font-size: 0.9rem;
+        color: #696871;
+        top: -8px;
+        left: 10px;
+        background: #ffffff;
+        padding: 0px 5px 0px 5px;
+      }
+    input:focus{
+        outline: none;
+    }
+    .contactFormBtn{
+        width: 320px;
+        padding: 0.6rem 0;
+        border-radius: 10px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #fff;
+        background-color: #06ACAB;
+        border: 0;
+        @media screen and (max-width:768px) {
+            width: 76vw;
+        }
+    }
+    .contactFormBtn:hover{
+        background-color: #069797;
+        cursor: pointer;
+    }
+}
+
+
+.tableContainer{
+    padding: 0;
+    .heading{
+        text-align: center;
+        margin: 3rem;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-shadow: 4px 4px 4px #0d3f42;
+    }
+    .tableCol{
+        padding: 0;
+    }
+
+}
+
+.table{
+    margin: 0;
+    thead{
+        font-size: 1.3rem;
+        th{
+            padding: 1rem;
+        }
+    }
+    tbody{
+        font-size: 1.1rem;
+        td{
+        padding: 1rem;
+        }
+    }
+}

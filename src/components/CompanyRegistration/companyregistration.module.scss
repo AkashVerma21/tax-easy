@@ -1,0 +1,412 @@
+.whyTaxEasyContainer{
+    padding-top: 7rem;
+    .infoCardContainer{
+        flex: 0 1 60%;
+        margin-top: -3rem;
+    }
+    .imageContainer{
+        width: 460px;
+        margin-left: 10rem;
+        @media screen and (max-width:1023px) {
+            width: auto;
+        }
+        .heading{
+            margin-top: 0;
+        }
+        @media screen and (max-width:1800px) {
+            margin-left: 2rem;
+        }
+    }
+    .image{
+        height: 60px;
+    }
+    .cardContainer{
+        padding: 2rem 1rem;
+        height: 280px;
+    }
+    .gap{
+        margin-top: -90px;
+        @media screen and (max-width: 1024px) {
+            margin-top: 15px;
+        }
+    }
+
+    @media screen and (max-width: 1440px) and (min-width: 767px) {
+        .cardContainer{
+        height: 210px;
+        width: 210px;
+        }
+        .image{
+            height: 40px;
+        }
+        .gap{
+            margin-top: -175px;
+        }
+     }
+}
+
+
+.calenderComponentContainer{
+    background-color: #000;
+    background-image: linear-gradient(rgba(27, 48, 70, 0.9), rgba(27, 48, 70, 0.9)), url(../../utils/images/ContactBackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:#fff;
+    @media screen and (max-width: 768px) {
+        padding: 3rem 1rem;
+    }
+    .mainHeading{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1rem;
+        padding-bottom: 3rem;
+        text-align: center;
+        @media screen and (max-width: 768px) {
+            font-size: 1.8rem;
+            padding-bottom: 2rem;
+        }
+    }
+    .cardMainContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (max-width: 768px) {
+            padding: 1rem;
+        }
+    }
+
+    .dateContainer{
+        padding: 0.5rem 1rem;  
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+        height: 80px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 20px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        @media screen and (max-width: 1440px) and (min-width: 767px) {
+            font-size: 1.1rem;
+            width: 280px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
+    .listHeadingData{
+        font-weight: 700;
+    }
+    .dateContainerFirst{
+        box-shadow: 5px 5px 4px 3px #CC3366;
+    }
+    .dateContainerSecond{
+        box-shadow: 5px 5px 4px 3px #25B6F5;
+    }
+    .dateContainerThird{
+        box-shadow: 5px 5px 4px 3px #FAC031;
+    }
+    .dateContainerFourth{
+        box-shadow: 5px 5px 4px 3px #CC3366;
+    }
+
+    .cardContainer{
+        width: 300px;
+        box-shadow: 5px 5px 4px 3px #979797;
+        min-height: 560px;
+        padding: 0.5rem;
+        margin: 30px;
+        margin-left: 0;
+        background-color: #fff;
+        color: #000;
+        border-radius: 20px;
+        @media screen and (max-width: 1440px) and (min-width: 767px) {
+            width: 280px;
+            min-height: 300px;
+        }
+        @media screen and (max-width: 768px) {
+            width: 100%;
+            margin-bottom: 5rem;
+        }
+        .cardHeading, .cardDescription{
+            font-size: 1.1rem;
+            color: #19191B;
+            font-weight: 500;
+        }
+        .cardDescription{
+            font-size: 1.1rem;
+            padding: 0 0.5rem;
+            list-style: none;
+            color: #5f5b5b;
+            @media screen and (max-width: 1440px) and (min-width: 767px) {
+                font-size: 0.8rem;
+            }
+            li{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1rem 0;
+                border-bottom: 2px dashed #a09c9c;
+                @media screen and (max-width: 1440px) and (min-width: 767px) {
+                    padding: 0.3rem 0;
+                    border-bottom: 1px dashed #a09c9c;
+                }
+                .subData{
+                    display: block;
+                    margin-top: 10px;
+                    @media screen and (max-width: 1440px) and (min-width: 767px) {
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .lastItem{
+                border-bottom: 0;
+            }
+            .largerData{
+                height: 130px;
+                @media screen and (max-width: 1440px) and (min-width: 767px) {
+                    height: 80px;
+                }
+            } 
+        }  
+    }
+}
+
+.companyRegisterationInCitiesMainContainer, .companyRegisterationInStatesMainContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4FFF1;
+    padding: 5rem;
+    padding-bottom: 2rem;
+    .heading{
+        font-size: 2.5rem;
+        font-weight: 600;
+        word-spacing: 0.6rem;
+    }
+    .descriptionContainer{
+        .listContainer{
+            padding-top: 2rem;
+            padding-left: 5rem;
+            width: 470px;
+            ul{
+                font-size: 1.3rem;
+                color: #000;
+            }
+        }
+    }
+    @media screen and (max-width: 1440px) and (min-width: 700px) {
+        padding: 5rem 0;
+        .descriptionContainer{
+            .listContainer{
+                width: auto;
+                padding-left: 1rem;
+            }
+        }
+    }
+    @media screen and (max-width: 701px){
+        padding: 4rem;
+        .heading{
+            text-align: center;
+            padding: 0 1rem;
+            font-size: 1.7rem;
+            word-spacing: normal;
+        }
+        .descriptionContainer{
+            .listContainer{
+                padding-left: 1rem;
+                width: 100%;
+                ul{
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}
+
+.companyRegisterationInStatesMainContainer{
+    padding-top: 0;
+    padding-bottom: 5rem;
+    .descriptionContainer{
+    .listContainer{
+        width: 550px;
+    }
+    }
+
+    @media screen and (max-width: 701px){
+        .descriptionContainer{
+            .listContainer{
+                padding-left: 1rem;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.itrFilingMainContainer{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: flex-end;
+    background-image: linear-gradient(rgba(27, 48, 70, 0.9), rgba(27, 48, 70, 0.9)), url(../../utils/images/ItrVedioBg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 6rem;
+    position: relative;
+    &::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 100px;
+        background-image: url(../../utils/images/bottomCurve.png);
+    }
+    .vedioContainer{
+    .solutionsVedio{
+       border-radius: 30px;
+        width: 650px;
+        height: 450px;
+        @media screen and (max-width: 1440px) and (min-width: 767px) {
+            width: 500px;
+            height: 350px;
+        }
+        @media screen and (max-width:768px) {
+            height: 300px;
+            width: 100%;
+            border-radius: 20px;
+        }
+    }
+}
+.textContainer{
+    margin-left: 15rem;
+    border: 2px solid #696871;
+    border-radius: 30px;
+    padding: 1rem;
+    height: fit-content;
+    @media screen and (max-width: 1440px) and (min-width: 767px) {
+        margin: 0 4rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    @media screen and (max-width: 768px){
+        margin: 0 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
+    }
+    .heading{
+        font-size: 2rem;
+        color: #fff;
+        border-bottom: 2px solid #fff;
+        width: fit-content;
+        margin-bottom: 1rem;
+        @media screen and (max-width: 1440px){
+            font-size: 1.6rem;
+            font-weight: 700;
+        }
+    }
+    .buttonContainer{
+        font-family: 'Alegreya SC', serif;
+        display: flex;
+        flex-wrap: wrap;
+        @media screen and (max-width: 1440px){
+            justify-content: center;
+            margin-left: 5px;
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        .callNow, .whatsapp{
+            font-size: 1.3rem;
+            font-weight: 700;
+            border-radius: 20px;
+            width: 220px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            margin-right: 10px;
+            z-index: 10;
+            cursor: pointer;
+            background-color: #fff;
+            @media screen and (max-width: 1440px) and (min-width: 767px) {
+                width: 180px;
+                height: 40px;
+                border-radius: 10px;
+                font-size: 1rem;
+            }
+            @media screen and (max-width: 768px){
+                width: 100%;
+                margin-bottom: 20px;
+                font-size: 1rem;
+                border-radius: 10px;
+            }
+            span{
+                margin-left: 4.5rem;
+                @media screen and (max-width: 1440px) and (min-width: 767px) {
+                    margin-left: 3rem;
+                }
+            }
+            img{
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                @media screen and (max-width: 1440px) and (min-width: 767px) {
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
+
+  .formContainer{
+    .nameInput, .mobileInput, .submitBtn{
+        width: 350px;
+        height: 50px;
+        font-size: 1.1rem;
+    }
+    .nameInput,.mobileInput{
+        &::placeholder{
+            text-align: center;
+            font-size: 1.1rem;
+        }
+    }
+    .errorBorder{
+        border: 2px solid #ff0000;
+    }
+    .errorMsg{
+        color: #ff0000;
+        height: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .submitBtn{
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.2rem;
+        background-color: #FDA700;
+        margin-bottom: 1rem;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .nameInput, .mobileInput, .submitBtn{
+        width: 100%;
+        font-size: 1rem;
+        &::placeholder{
+            font-size: 1rem;
+        }
+    }
+}
+}
+
+

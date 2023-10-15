@@ -1,0 +1,77 @@
+.eligibilityMainConatiner{
+    background-color: #E4DCF3;
+    padding: 3rem 0rem;
+    .eligibilitySubContainer1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mainHeading{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1rem;
+            @media screen and (max-width:1440px) {
+                font-size: 1.8rem;
+                margin-top: 0;
+                text-align: center;
+            }
+        }
+        .mainDescription{
+            font-size: 1.2rem;
+            color: #696871;
+            @media screen and (max-width:1440px) {
+                font-size: 0.9rem;
+                margin-left: 1rem;
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        padding: 5rem 1rem;
+        margin-top: 3rem;
+    }
+}
+
+.eligibilityCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.card{
+    background-color: #fff;
+    border: 2px solid #d8d8db;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    width: 550px;
+    margin: 0 15px 30px 15px;
+
+    img{
+        height: 60px;
+    }
+
+    .cardTitle{
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-left: 20px;
+    }
+    .cardDescription{
+        font-size: 1rem;
+        margin-top: 15px;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+
+    @media screen and (max-width: 1440px) {
+        width: 450px;
+        img{
+            height: 40px;
+        }
+        .cardTitle{
+            font-size: 1.1rem;
+        }
+        .cardDescription{
+            font-size: 0.8rem;
+        }
+    }
+}

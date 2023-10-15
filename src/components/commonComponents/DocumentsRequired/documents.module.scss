@@ -1,0 +1,121 @@
+.gstDocumentMainConatiner{
+    background-color: #fff;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .gstDocumentSubContainer1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .mainHeading{
+            font-size: 3rem;
+            font-weight: 700;
+            margin: 1rem;
+            @media screen and (max-width:1440px) {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+        }
+    }
+    @media screen and (max-width:768px) {
+        padding: 3rem 1.5rem;
+    }
+}
+
+.documentListHeading ul{
+    box-sizing: border-box;
+    display: flex;
+    text-align: center;
+    list-style: none;
+    max-width: 1600px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 30px 30px 0 0;
+    padding: 0.3rem 6rem;
+    font-size: 1.2rem;
+    margin: 2rem 0 4rem 0;
+    @media screen and (max-width: 1440px) and (min-width: 767px) {
+        padding: 0.2rem 4rem;
+        margin: 1rem 0 3rem 0;
+    }
+    @media screen and (max-width:768px) {
+        width: 100%;
+        max-width: fit-content;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    & li{
+        padding: 0.8rem 4rem;
+        cursor: pointer;
+        box-sizing: border-box;
+        margin: 0 20px;
+        &:hover{
+        background: #06AEAD;
+        border-radius: 10px;
+        }
+        @media screen and (max-width: 1440px) and (min-width: 767px) {
+            padding: 0.5rem 2rem;
+        }
+    }
+
+    .active{
+        background: #06AEAD;
+        border-radius: 10px;
+    }
+}
+
+.gstDocumentCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.documentListContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1440px;
+    font-size: 1.3rem;
+}
+
+.documentCard {
+    display: flex;
+    align-items: center;
+    border: 1px solid #979797;
+    border-radius: 30px;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    margin: 10px;
+    width: 430px;
+    @media screen and (max-width: 1440px) and (min-width: 767px) {
+        width: 340px;
+        padding: 0.3rem 1rem;
+        border-radius: 13px;
+    }
+    @media screen and (max-width:767px) {
+        width: 100%;
+        padding: 1rem;
+        margin: 10px auto;
+    }
+    .descriptionCardContainer{
+        margin-left: 1rem;
+        margin-top: 12px;
+        .description{
+            font-size: 1rem;
+        }
+    }
+}
+
+.mobileHeading{
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 2rem;
+    @media screen and (max-width:767px) {
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+}
