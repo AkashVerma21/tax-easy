@@ -31,7 +31,7 @@ const Homecomponent = () => {
         heading={"We Associated With"}
         info={AssociatedWithData}
       />
-      <FileYourITRComponent />
+      <FileYourITRComponent heading="ITR FILING SEASON IS ON !" isHome="true" />
       <StepsComponent stepList={itrStepList} />
       <Services services={Home_Services} />
       <WhyTaxEasyComponent

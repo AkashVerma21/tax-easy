@@ -71,7 +71,11 @@ const ITRComponent = () => {
           info={AssociatedWithData}
         />
       )}
-      <FileYourITRComponent vedioRef={vedioRef} autoplay={autoplay} />
+      <FileYourITRComponent
+        vedioRef={vedioRef}
+        autoplay={autoplay}
+        heading="File your ITR Today !"
+      />
       <StepsComponent stepList={itrStepList} />
 
       <div className={Classes.itrFormsmMainContainer}>
@@ -219,7 +223,12 @@ const ITRComponent = () => {
 
 export default ITRComponent;
 
-export const FileYourITRComponent = ({ vedioRef, autoplay }) => {
+export const FileYourITRComponent = ({
+  vedioRef,
+  autoplay,
+  heading,
+  isHome,
+}) => {
   const [mobileNo, setMobileNo] = useState("");
   const [error, setError] = useState("");
   const [show, setShow] = useState(false);
@@ -282,30 +291,42 @@ export const FileYourITRComponent = ({ vedioRef, autoplay }) => {
         ></iframe>
       </div>
       <div className={Classes.textContainer}>
-        <h2 className={Classes.heading}>File your ITR Today ! </h2>
-        <div className={Classes.mobileInputContainer}>
-          <input
-            type="number"
-            name="mobile"
-            placeholder="Enter Mobile Number "
-            className={classNames(
-              Classes.mobileInput,
-              error ? Classes.errorBorder : ""
-            )}
-            value={mobileNo}
-            onChange={(e) => {
-              setMobileNo(e.target.value);
-              setError("");
-            }}
-          />
-          {isMobile && <p className={Classes.errorMsg}>{error}</p>}
-          <button className={Classes.mobileInputButton} onClick={onSubmitClick}>
-            GET INSTANT
-            <br />
-            QUOTE!
-          </button>
+        <h2 className={Classes.heading}>{heading} </h2>
+        <div>
+          {isHome ? (
+            <h3 className={Classes.heading}>Starting from 999/-</h3>
+          ) : (
+            <div>
+              <div className={Classes.mobileInputContainer}>
+                <input
+                  type="number"
+                  name="mobile"
+                  placeholder="Enter Mobile Number "
+                  className={classNames(
+                    Classes.mobileInput,
+                    error ? Classes.errorBorder : ""
+                  )}
+                  value={mobileNo}
+                  onChange={(e) => {
+                    setMobileNo(e.target.value);
+                    setError("");
+                  }}
+                />
+                {isMobile && <p className={Classes.errorMsg}>{error}</p>}
+                <button
+                  className={Classes.mobileInputButton}
+                  onClick={onSubmitClick}
+                >
+                  GET INSTANT
+                  <br />
+                  QUOTE!
+                </button>
+              </div>
+              {!isMobile && <p className={Classes.errorMsg}>{error}</p>}
+            </div>
+          )}
         </div>
-        {!isMobile && <p className={Classes.errorMsg}>{error}</p>}
+
         <ThankyouModal show={show} handleClose={handleClose} />
         <div className={Classes.buttonContainer}>
           <a
